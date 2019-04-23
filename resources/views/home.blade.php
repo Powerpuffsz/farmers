@@ -21,3 +21,9 @@
     </div>
 </div>
 @endsection
+
+@section('scripts')
+<section>
+    <h1>home2</h1>
+</section>
+@endsection

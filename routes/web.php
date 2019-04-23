@@ -12,10 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('site_landing');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@dashboard')->name('home');
+// Route::get('/admin/dashboard', 'HomeController@dashboard')->name('admin.dashboard');
+Route::get('/site', 'LandingController@index')->name('site');
+Route::resource('shares', 'ShareController');
 Auth::routes(['verify' => true]);

@@ -1,0 +1,28 @@
+body,html{
+    height: 100%;
+}
+body{
+    margin: 0;
+}
+
+.parallax-window {
+	min-height: 400px;
+	background: transparent;
+}
+
+.desc{
+    min-height: 100px;
+}
+
+/* #cursor {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+} */
+
+#cursor {
+	background: rgba(0,0,0,0.8);
+	padding: 12px 10px;
+	/* margin-bottom: 1px;s */
+	color: #fff;
+}
